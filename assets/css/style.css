@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==== BOTÃO POP-UP ==== */
+
+.btnPop {
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+    color: #03a9f4;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btnPop:hover {
+    letter-spacing: 4px;
+}
+
+/* ==== CONTAINER POP UP ==== */
+
+.popUp {
+    position: absolute;
+    background-color: #fff;
+    width: 450px;
+    z-index: 1000;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 12px;
+    transition: 0.5s;
+}
+
+.popUp.active {
+    top: 50%;
+}
+
+.popUp .content { 
+    width: 100%;
+    text-align: center;
+}
+
+.popUp .content h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
+
+.popUp .content p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #333333;
+}
+
+.popUp .content .inputBox input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #757575;
+    margin: 18px 0;
+    border: 2px solid #EAEAEA;
+    outline: none;
+}
+
+.popUp .content .inputBox input[type="submit"] {
+    padding: 15px 50px;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #03a9f4;
+    color: #fff;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.popUp .content .inputBox input[type="submit"]:hover {
+    letter-spacing: 4px;
+}
+
+.popUp img {
+    max-width: 80px;
+}
+
+.popUp .btnClose {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
