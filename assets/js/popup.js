@@ -1,5 +1,5 @@
 const btnBox = document.querySelector(".btnPop")
-const boxPop = document.querySelector(".popUp")
+const boxPop = document.querySelector(".container_PopUp")
 const closePop = document.querySelector(".btnClose")
 
 btnBox.addEventListener("click", (event) => {

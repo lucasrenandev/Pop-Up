@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 
-/* ==== BOTÃO POP-UP ==== */
+/* ==== BOTÃO POP UP ==== */
 
 .btnPop {
     display: inline-block;
@@ -38,7 +38,7 @@ body {
 
 /* ==== CONTAINER POP UP ==== */
 
-.popUp {
+.container_PopUp {
     position: absolute;
     background-color: #fff;
     width: 450px;
@@ -55,29 +55,29 @@ body {
     transition: 0.5s;
 }
 
-.popUp.active {
+.container_PopUp.active {
     top: 50%;
 }
 
-.popUp .content { 
+.container_PopUp .content { 
     width: 100%;
     text-align: center;
 }
 
-.popUp .content h2 {
+.container_PopUp .content h2 {
     font-size: 1.6em;
     font-weight: 500;
     color: #333333;
     margin: 0 0 10px 0;
 }
 
-.popUp .content p {
+.container_PopUp .content p {
     font-size: 1.2em;
     font-weight: 400;
     color: #333333;
 }
 
-.popUp .content .inputBox input[type="email"] {
+.container_PopUp .content .inputBox input[type="email"] {
     width: 100%;
     padding: 15px;
     font-size: 1em;
@@ -88,7 +88,7 @@ body {
     outline: none;
 }
 
-.popUp .content .inputBox input[type="submit"] {
+.container_PopUp .content .inputBox input[type="submit"] {
     padding: 15px 50px;
     font-size: 1em;
     font-weight: 500;
@@ -101,15 +101,15 @@ body {
     cursor: pointer;
 }
 
-.popUp .content .inputBox input[type="submit"]:hover {
+.container_PopUp .content .inputBox input[type="submit"]:hover {
     letter-spacing: 4px;
 }
 
-.popUp img {
+.container_PopUp img {
     max-width: 80px;
 }
 
-.popUp .btnClose {
+.container_PopUp .btnClose {
     position: absolute;
     top: 30px;
     right: 30px;
